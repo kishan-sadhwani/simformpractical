@@ -42,10 +42,10 @@ class CellBookInfo: UITableViewCell {
     
     func setExpanded(_ isExpanded: Bool) {
         if isExpanded {
-            self.btnExpandedState.isSelected = false
+            self.btnExpandedState.isSelected = true
             self.lblLongDescription.isHidden = false
         } else {
-            self.btnExpandedState.isSelected = true
+            self.btnExpandedState.isSelected = false
             self.lblLongDescription.isHidden = true
         }
     }
