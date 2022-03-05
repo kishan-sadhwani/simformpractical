@@ -36,6 +36,15 @@ class PurchaseHistoryViewModel: NSObject {
                 if !self.books.replace(book, with: book) {
                     self.books.append(book)
                 }
+                self.books.sort { book1, book2 in
+                    guard let date1 = Utility.getDate(fromString: book1.purchaseDate ?? "", format: DateFormatEnum.dd_MM_yyyy_HH_mm_ss) else {
+                        return false
+                    }
+                    guard let date2 = Utility.getDate(fromString: book2.purchaseDate ?? "", format: DateFormatEnum.dd_MM_yyyy_HH_mm_ss) else {
+                        return true
+                    }
+                    return date1 > date2
+                }
                 self.onBookListUpdate?()
             }
         }
@@ -49,6 +58,15 @@ class PurchaseHistoryViewModel: NSObject {
                 let book = Book(with: bookJson)
                 if !self.books.replace(book, with: book) {
                     self.books.append(book)
+                }
+                self.books.sort { book1, book2 in
+                    guard let date1 = Utility.getDate(fromString: book1.purchaseDate ?? "", format: DateFormatEnum.dd_MM_yyyy_HH_mm_ss) else {
+                        return false
+                    }
+                    guard let date2 = Utility.getDate(fromString: book2.purchaseDate ?? "", format: DateFormatEnum.dd_MM_yyyy_HH_mm_ss) else {
+                        return true
+                    }
+                    return date1 > date2
                 }
                 self.onBookListUpdate?()
             }

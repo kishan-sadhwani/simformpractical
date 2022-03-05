@@ -67,7 +67,7 @@ class DashboardViewModel: NSObject {
     ///Buy book
     func buyBook(_ book: Book) {
         book.isPurchased = true
-        book.purchaseDate = Utility.getDate(inFormat: DateFormatEnum.dd_MM_yyyy_HH_mm, date: Date())
+        book.purchaseDate = Utility.getDate(inFormat: DateFormatEnum.dd_MM_yyyy_HH_mm_ss, date: Date())
         
         guard let bookId = book.id else {
             return

@@ -83,7 +83,7 @@ extension PurchaseHistoryVC: UITableViewDelegate, UITableViewDataSource {
         cell.lblAuthorName.text = book.author?.capitalized
         cell.lblPrice.text = book.price
         cell.lblShortDescription.text = book.shortDescription
-        cell.lblPurchaseDate.text = Utility.convertDateStringFormat(ofDate: book.purchaseDate ?? "", from: DateFormatEnum.dd_MM_yyyy_HH_mm, to: DateFormatEnum.bookPurchaseDate)
+        cell.lblPurchaseDate.text = Utility.convertDateStringFormat(ofDate: book.purchaseDate ?? "", from: DateFormatEnum.dd_MM_yyyy_HH_mm_ss, to: DateFormatEnum.bookPurchaseDate)
         
         cell.btnDelete.tag = indexPath.row
         cell.btnDelete.addTarget(self, action: #selector(actionDeleteBook(_:)), for: .touchUpInside)

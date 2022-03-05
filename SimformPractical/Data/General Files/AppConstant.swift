@@ -41,6 +41,6 @@ enum StoryBoard {
 
 //MARK: - Date Formats
 enum DateFormatEnum {
-    static let dd_MM_yyyy_HH_mm = "dd-MM-yyyy HH:mm"
+    static let dd_MM_yyyy_HH_mm_ss = "dd-MM-yyyy HH:mm:ss"
     static let bookPurchaseDate = "dd MMM, yyyy"
 }

@@ -32,6 +32,7 @@
 		2572303627D3743F00B48B05 /* CellPurchaseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2572303427D3743E00B48B05 /* CellPurchaseInfo.swift */; };
 		2572303727D3743F00B48B05 /* CellPurchaseInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2572303527D3743F00B48B05 /* CellPurchaseInfo.xib */; };
 		2572303C27D3807700B48B05 /* AddBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2572303B27D3807700B48B05 /* AddBookVC.swift */; };
+		2572303E27D3839F00B48B05 /* AddBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2572303D27D3839F00B48B05 /* AddBookViewModel.swift */; };
 		97244576EB1EB1BC405EAEE4 /* Pods_SimformPractical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205CB9ED0AB850FB4E852E32 /* Pods_SimformPractical.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		2572303427D3743E00B48B05 /* CellPurchaseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPurchaseInfo.swift; sourceTree = "<group>"; };
 		2572303527D3743F00B48B05 /* CellPurchaseInfo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellPurchaseInfo.xib; sourceTree = "<group>"; };
 		2572303B27D3807700B48B05 /* AddBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookVC.swift; sourceTree = "<group>"; };
+		2572303D27D3839F00B48B05 /* AddBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookViewModel.swift; sourceTree = "<group>"; };
 		FDD1CCCD4FD1D7E375F1C846 /* Pods-SimformPractical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimformPractical.debug.xcconfig"; path = "Target Support Files/Pods-SimformPractical/Pods-SimformPractical.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -285,6 +287,7 @@
 		2572303A27D3805D00B48B05 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2572303D27D3839F00B48B05 /* AddBookViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				2572302127D353F000B48B05 /* AppConstant.swift in Sources */,
 				25722FE927D3406B00B48B05 /* AppDelegate.swift in Sources */,
 				2572303C27D3807700B48B05 /* AddBookVC.swift in Sources */,
+				2572303E27D3839F00B48B05 /* AddBookViewModel.swift in Sources */,
 				2572303627D3743F00B48B05 /* CellPurchaseInfo.swift in Sources */,
 				2572300A27D341B700B48B05 /* BaseView.swift in Sources */,
 				2572302027D353F000B48B05 /* AllExtensions.swift in Sources */,
